@@ -1,0 +1,79 @@
+{
+  "name": "web-experiments-react",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint:tsc": "tsc --project . --noEmit",
+    "lint:eslint": "eslint '*.{js,ts,tsx}' --quiet --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krzysztofzuraw/web-experiments-react.git"
+  },
+  "keywords": [],
+  "author": "Krzysztof Żuraw <info@kzuraw.com> (https://krzysztofzuraw.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krzysztofzuraw/web-experiments-react/issues"
+  },
+  "homepage": "https://github.com/krzysztofzuraw/web-experiments-react#readme",
+  "dependencies": {
+    "next": "10.0.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "14.14.12",
+    "@types/react": "17.0.0",
+    "@typescript-eslint/eslint-plugin": "4.9.1",
+    "@typescript-eslint/parser": "4.9.1",
+    "eslint": "7.15.0",
+    "eslint-config-prettier": "7.0.0",
+    "eslint-plugin-prettier": "3.2.0",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "prettier": "2.2.1",
+    "typescript": "4.1.2"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "ignorePatterns": [
+      "node_modules",
+      "dist",
+      ".next"
+    ],
+    "extends": [
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "@typescript-eslint/explicit-module-boundary-types": "off"
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  },
+  "prettier": {
+    "printWidth": 100,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "semi": true
+  }
+}
